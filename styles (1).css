@@ -1,0 +1,143 @@
+body{
+    background-color: lightblue;
+}
+nav{
+    background-color: white;
+    width:100%;
+    height:60px;
+   display: flex;
+   justify-content: center;
+   padding-right: 20px;
+   position: fixed;
+   top:0;
+   right: 0;
+   left: 0;
+   z-index: 1;
+
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-right: 10px;
+    width: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav a:hover{
+    background-color: lightpink;
+    transition:4s;
+}
+nav img{
+    margin-right:auto;
+}
+.container{
+    width:780px;
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightpink;
+    height:auto;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.row{
+    display:flex;
+    gap: 15px;
+}
+.product-image{
+    width: 400px;
+
+}
+.product-image img{
+    
+    object-fit: fill;
+    width: 400px;
+
+}
+.product-detail{
+    width:400px;
+}
+.related-product{
+    width:180px;
+    padding: 10px;
+    border:  2px solid black;
+    background-color:white;
+    position: relative;
+
+}
+.related-product img{
+    width:100%;
+    object-fit: cover;
+
+}
+.related-product-name{
+    width:100%;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35px;
+    padding-top: 10px;
+    padding-top:10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0.9;
+    visibility:hidden;
+}
+.related-product:hover .related-product-name{
+    visibility:visible;
+}
+footer{
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    color: black;
+    height: 35px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.img-container:hover .caption {
+    visibility: visible;
+}
+.img-container{
+    position: relative;
+    width: 100%;
+}
+.img-container img{
+    width: 100%;
+    opject-fit: cover;
+}
+.img-container .caption {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(25, 25, 25, 0.5);
+    /* background-color: black; */
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+.team {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.team .member {
+    width: 400px;
+    padding: 10px;
+}
+.team .member img {
+    border-radius: 50%;
+    width: 100%; 
+}
+.team .member .name {
+    font-weight: bold;
+}
